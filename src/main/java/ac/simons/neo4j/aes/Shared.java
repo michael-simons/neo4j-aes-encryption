@@ -45,6 +45,10 @@ final class Shared {
 		return sb.toString();
 	}
 
+	public static void main(String ...a) {
+		System.out.println(fromHexString("9D3C5CB0A243E0BF09241A43118CF0DF4AFA810CE7FCF1718CA92E21FFEB1790"));
+	}
+
 	static byte[] fromHexString(String string) {
 		var len = string.length();
 		var data = new byte[len / 2];
